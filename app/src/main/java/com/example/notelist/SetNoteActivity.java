@@ -43,7 +43,7 @@ public class SetNoteActivity extends AppCompatActivity {
         if (intent.hasExtra(EXTRA_ID)) {
             setTitle("Edit Note");
             editTextTitle.setText(intent.getStringExtra(EXTRA_TITLE));
-            editTextTitle.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
+            editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
             numberPickerPriorty.setValue(intent.getIntExtra(EXTRA_PRIORITY,1));
         } else {
             setTitle("Add Note");
